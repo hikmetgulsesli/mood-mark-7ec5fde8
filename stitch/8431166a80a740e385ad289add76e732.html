@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Record Operations - Mood Mark</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#bcc9c6",
+                        "secondary-fixed": "#d9e3f7",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#121c2a",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "outline": "#6d7a77",
+                        "on-background": "#141b2b",
+                        "tertiary-container": "#b05e3d",
+                        "surface-container-low": "#f1f3ff",
+                        "surface-variant": "#dce2f7",
+                        "surface-container-high": "#e1e8fd",
+                        "surface-container-highest": "#dce2f7",
+                        "primary-fixed-dim": "#6bd8cb",
+                        "on-primary-fixed": "#00201d",
+                        "on-secondary-container": "#596374",
+                        "tertiary": "#924628",
+                        "surface-container": "#e9edff",
+                        "on-tertiary-container": "#fffbff",
+                        "surface-tint": "#006a61",
+                        "on-secondary-fixed-variant": "#3d4757",
+                        "secondary-container": "#d6e0f4",
+                        "on-surface": "#141b2b",
+                        "surface-dim": "#d3daef",
+                        "secondary": "#555f70",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#bdc7db",
+                        "on-error-container": "#93000a",
+                        "surface": "#f9f9ff",
+                        "on-tertiary-fixed": "#370e00",
+                        "inverse-primary": "#6bd8cb",
+                        "on-primary-fixed-variant": "#005049",
+                        "primary-container": "#008378",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#293040",
+                        "on-primary-container": "#f4fffc",
+                        "inverse-on-surface": "#edf0ff",
+                        "on-surface-variant": "#3d4947",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdbce",
+                        "background": "#f9f9ff",
+                        "on-tertiary-fixed-variant": "#773215",
+                        "on-primary": "#ffffff",
+                        "primary": "#00685f",
+                        "primary-fixed": "#89f5e7",
+                        "surface-bright": "#f9f9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max-width": "1200px",
+                        "margin-desktop": "32px",
+                        "margin-mobile": "16px",
+                        "gutter": "16px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Geist"],
+                        "headline-lg": ["Geist"],
+                        "body-sm": ["Geist"],
+                        "body-md": ["Geist"],
+                        "headline-sm": ["Geist"],
+                        "label-md": ["Geist"],
+                        "body-lg": ["Geist"],
+                        "headline-md": ["Geist"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Geist', sans-serif; background-color: #f9f9ff; color: #141b2b; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom Button Override based on Style Guidance */
+        .btn-primary { background-color: #0D9488; color: #ffffff; border-radius: 4px; }
+        .btn-primary:hover { background-color: #0F766E; }
+    </style>
+</head>
+<body class="flex min-h-screen bg-background text-on-background">
+<!-- SideNavBar Component -->
+<nav class="hidden md:flex flex-col p-4 gap-2 h-screen w-64 fixed left-0 top-0 border-r border-outline-variant bg-surface dark:bg-surface-dim z-20">
+<!-- Header -->
+<div class="mb-8 px-4 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shrink-0">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<div>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim">Mood Mark</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Productivity Utility</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex-1 flex flex-col gap-1">
+<a class="flex items-center gap-3 px-4 py-3 bg-secondary-container dark:bg-secondary-fixed text-on-secondary-container dark:text-on-secondary-fixed rounded-lg active:scale-95 duration-100 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined fill">history_edu</span>
+<span>Records</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-container-low dark:hover:bg-surface-container-highest rounded-lg transition-all active:scale-95 duration-100 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">insights</span>
+<span>Insights</span>
+</a>
+</div>
+<!-- Footer Links -->
+<div class="mt-auto flex flex-col gap-1 border-t border-outline-variant pt-4">
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-container-low dark:hover:bg-surface-container-highest rounded-lg transition-all active:scale-95 duration-100 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-container-low dark:hover:bg-surface-container-highest rounded-lg transition-all active:scale-95 duration-100 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">help</span>
+<span>Help</span>
+</a>
+</div>
+</nav>
+<!-- TopAppBar (Mobile Only) -->
+<header class="md:hidden flex justify-between items-center h-14 px-margin-mobile w-full top-0 sticky border-b border-outline-variant bg-surface dark:bg-surface-dim z-20">
+<h1 class="text-headline-md font-headline-md font-bold text-primary tracking-tight">Mood Mark</h1>
+<div class="flex items-center gap-4">
+<button class="text-primary hover:text-primary-fixed-dim transition-colors cursor-pointer active:opacity-80">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="text-primary hover:text-primary-fixed-dim transition-colors cursor-pointer active:opacity-80">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-64 p-margin-mobile md:p-margin-desktop w-full max-w-container-max-width mx-auto pb-24 md:pb-8">
+<!-- Header Actions & Search -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Records</h2>
+<div class="flex flex-col sm:flex-row w-full md:w-auto gap-4">
+<!-- Search Input -->
+<div class="relative w-full md:w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container-lowest border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body-sm text-body-sm text-on-background placeholder-on-surface-variant" placeholder="Search records..." type="text"/>
+</div>
+<!-- Create Button -->
+<button class="btn-primary px-4 py-2 flex items-center justify-center gap-2 font-label-md text-label-md transition-shadow hover:shadow-sm h-[36px] whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                    Create Record
+                </button>
+</div>
+</div>
+<!-- Summary Metrics (Bento Grid Style) -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+<!-- Metric Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-4 flex flex-col justify-between hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Total Notes</span>
+<span class="material-symbols-outlined text-primary text-[20px]">sticky_note_2</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-background">342</div>
+</div>
+<!-- Metric Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-4 flex flex-col justify-between hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Current Streak</span>
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">local_fire_department</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-background">12 <span class="font-body-sm text-body-sm text-on-surface-variant ml-1">Days</span></div>
+</div>
+<!-- Metric Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-4 flex flex-col justify-between hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-shadow col-span-2 md:col-span-2">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Last Entry</span>
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<div class="w-2 h-2 rounded-full bg-[#10B981]"></div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-background font-medium">"Feeling productive after deep work session."</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Today, 2:30 PM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Data Table (Dense List View) -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded overflow-hidden">
+<!-- Table Header -->
+<div class="grid grid-cols-12 gap-4 p-3 border-b border-outline-variant bg-surface-container-low font-label-md text-label-md text-on-surface-variant">
+<div class="col-span-2">Date</div>
+<div class="col-span-2">Mood</div>
+<div class="col-span-5">Snippet</div>
+<div class="col-span-2">Tags</div>
+<div class="col-span-1 text-right">Actions</div>
+</div>
+<!-- Table Body -->
+<div class="flex flex-col divide-y divide-outline-variant">
+<!-- Row 1 -->
+<div class="grid grid-cols-12 gap-4 p-3 items-center hover:bg-surface-container-low transition-colors group">
+<div class="col-span-2 font-body-sm text-body-sm text-on-surface-variant">Oct 24, 2023</div>
+<div class="col-span-2 flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-[#10B981]"></div>
+<span class="font-label-sm text-label-sm text-on-background">Focused</span>
+</div>
+<div class="col-span-5 font-body-md text-body-md text-on-background truncate">Completed the final review of the Q3 project deliverables. Feeling solid.</div>
+<div class="col-span-2 flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-[#F3F4F6] text-[#374151] rounded text-[10px] font-medium tracking-wide">Work</span>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="text-on-surface-variant hover:text-primary transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-12 gap-4 p-3 items-center hover:bg-surface-container-low transition-colors group">
+<div class="col-span-2 font-body-sm text-body-sm text-on-surface-variant">Oct 23, 2023</div>
+<div class="col-span-2 flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-[#F59E0B]"></div>
+<span class="font-label-sm text-label-sm text-on-background">Anxious</span>
+</div>
+<div class="col-span-5 font-body-md text-body-md text-on-background truncate">Upcoming presentation is looming. Need more prep time.</div>
+<div class="col-span-2 flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-[#F3F4F6] text-[#374151] rounded text-[10px] font-medium tracking-wide">Stress</span>
+<span class="px-2 py-0.5 bg-[#F3F4F6] text-[#374151] rounded text-[10px] font-medium tracking-wide">Work</span>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="text-on-surface-variant hover:text-primary transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-12 gap-4 p-3 items-center hover:bg-surface-container-low transition-colors group">
+<div class="col-span-2 font-body-sm text-body-sm text-on-surface-variant">Oct 22, 2023</div>
+<div class="col-span-2 flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-[#3B82F6]"></div>
+<span class="font-label-sm text-label-sm text-on-background">Calm</span>
+</div>
+<div class="col-span-5 font-body-md text-body-md text-on-background truncate">Quiet Sunday morning reading. Much needed reset.</div>
+<div class="col-span-2 flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-[#F3F4F6] text-[#374151] rounded text-[10px] font-medium tracking-wide">Rest</span>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="text-on-surface-variant hover:text-primary transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty / Error State (Hidden by default, shown for demonstration structure) -->
+<div class="hidden mt-8 flex-col items-center justify-center p-12 bg-surface-container-lowest border border-outline-variant rounded border-dashed">
+<span class="material-symbols-outlined text-[48px] text-outline-variant mb-4">search_off</span>
+<h3 class="font-headline-sm text-headline-sm text-on-background mb-2">No records found</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center max-w-md mb-6">We couldn't find any records matching your search criteria. Try adjusting your filters or create a new entry.</p>
+<button class="btn-primary px-4 py-2 font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+                Clear Search
+            </button>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full bg-surface border-t border-outline-variant z-20 h-[64px] px-2 flex items-center justify-around pb-safe">
+<a class="flex flex-col items-center justify-center w-16 h-full text-primary" href="#">
+<div class="w-12 h-8 flex items-center justify-center bg-secondary-container rounded-full mb-1">
+<span class="material-symbols-outlined fill text-on-secondary-container">history_edu</span>
+</div>
+<span class="text-[10px] font-medium leading-none">Records</span>
+</a>
+<a class="flex flex-col items-center justify-center w-16 h-full text-on-surface-variant hover:text-primary transition-colors" href="#">
+<div class="w-12 h-8 flex items-center justify-center mb-1">
+<span class="material-symbols-outlined">insights</span>
+</div>
+<span class="text-[10px] font-medium leading-none">Insights</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,35 @@
+[
+  {
+    "screenId": "94c07817a5d641daa047e4d76ae5cba1",
+    "title": "Record Editor - Mood Mark",
+    "htmlFile": "94c07817a5d641daa047e4d76ae5cba1.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2JiNjYzNzk2M2E4MDQxMTg4NTAyMDI5MGJkMjk3NGYwEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM1ODE5MjA3ODE5MDk5OTAwODU1&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/mood-mark-7ec5fde8/stitch/94c07817a5d641daa047e4d76ae5cba1.html",
+    "surfaceIds": [
+      "SURF_RECORD_EDITOR"
+    ]
+  },
+  {
+    "screenId": "8431166a80a740e385ad289add76e732",
+    "title": "Record Operations - Mood Mark",
+    "htmlFile": "8431166a80a740e385ad289add76e732.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzY5MmZhZGY4ZDc3MTQ2M2M5ZmE0NmI4ZjQ4NWFkZWVkEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM1ODE5MjA3ODE5MDk5OTAwODU1&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/mood-mark-7ec5fde8/stitch/8431166a80a740e385ad289add76e732.html",
+    "surfaceIds": [
+      "SURF_RECORD_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "1b704e194da84bc7ba11bbec4151ab66",
+    "title": "Insights - Mood Mark",
+    "htmlFile": "1b704e194da84bc7ba11bbec4151ab66.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzNlNjg4ZDdiZTE2ZDRmYWQ4YWVlYjQwMjAwNTZiMWIwEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM1ODE5MjA3ODE5MDk5OTAwODU1&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/mood-mark-7ec5fde8/stitch/1b704e194da84bc7ba11bbec4151ab66.html",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  }
+]

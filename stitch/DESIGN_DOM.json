@@ -1,0 +1,1160 @@
+{
+  "generatedAt": "2026-07-06T01:55:42.898Z",
+  "screenCount": 3,
+  "screens": {
+    "1b704e194da84bc7ba11bbec4151ab66": {
+      "screenId": "1b704e194da84bc7ba11bbec4151ab66",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "absolute",
+          "classes": [
+            "h-screen",
+            "w-64",
+            "fixed",
+            "left-0",
+            "top-0",
+            "bg-surface",
+            "dark:bg-surface-dim",
+            "text-primary",
+            "dark:text-primary-fixed-dim",
+            "font-label-md"
+          ],
+          "childCount": 7
+        },
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "w-full",
+            "top-0",
+            "sticky",
+            "bg-surface",
+            "dark:bg-surface-dim",
+            "border-b",
+            "border-outline-variant",
+            "dark:border-outline",
+            "flat",
+            "no"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "md:ml-64",
+            "p-margin-mobile",
+            "md:p-margin-desktop",
+            "pb-24",
+            "md:pb-margin-desktop",
+            "max-w-container-max-width",
+            "mx-auto",
+            "w-full",
+            "flex"
+          ],
+          "childCount": 64
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Filter",
+          "classes": [
+            "h-9",
+            "px-3",
+            "rounded",
+            "bg-surface",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "flex",
+            "items-center",
+            "gap-2",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Export Summary",
+          "classes": [
+            "h-9",
+            "px-3",
+            "rounded",
+            "bg-surface",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "flex",
+            "items-center",
+            "gap-2",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "text-label-md",
+            "font-label-md"
+          ],
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Keep it up",
+          "classes": [
+            "mt-3",
+            "text-primary",
+            "font-label-sm",
+            "text-label-sm",
+            "uppercase",
+            "tracking-wider",
+            "hover:underline"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "mood",
+          "classes": [],
+          "icon": "mood",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Mood Mark",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Productivity Utility",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Records",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "history_edu",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "insights",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "mood",
+        "history_edu",
+        "insights",
+        "settings",
+        "help",
+        "account_circle",
+        "filter_list",
+        "download",
+        "lightbulb"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "outline-variant": "#bcc9c6",
+        "secondary-fixed": "#d9e3f7",
+        "error": "#ba1a1a",
+        "on-secondary-fixed": "#121c2a",
+        "on-error": "#ffffff",
+        "tertiary-fixed-dim": "#ffb59a",
+        "outline": "#6d7a77",
+        "on-background": "#141b2b",
+        "tertiary-container": "#b05e3d",
+        "surface-container-low": "#f1f3ff",
+        "surface-variant": "#dce2f7",
+        "surface-container-high": "#e1e8fd",
+        "surface-container-highest": "#dce2f7",
+        "primary-fixed-dim": "#6bd8cb",
+        "on-primary-fixed": "#00201d",
+        "on-secondary-container": "#596374",
+        "tertiary": "#924628",
+        "surface-container": "#e9edff",
+        "on-tertiary-container": "#fffbff",
+        "surface-tint": "#006a61",
+        "on-secondary-fixed-variant": "#3d4757",
+        "secondary-container": "#d6e0f4",
+        "on-surface": "#141b2b",
+        "surface-dim": "#d3daef",
+        "secondary": "#555f70",
+        "surface-container-lowest": "#ffffff",
+        "secondary-fixed-dim": "#bdc7db",
+        "on-error-container": "#93000a",
+        "surface": "#f9f9ff",
+        "on-tertiary-fixed": "#370e00",
+        "inverse-primary": "#6bd8cb",
+        "on-primary-fixed-variant": "#005049",
+        "primary-container": "#008378",
+        "on-secondary": "#ffffff",
+        "inverse-surface": "#293040",
+        "on-primary-container": "#f4fffc",
+        "inverse-on-surface": "#edf0ff",
+        "on-surface-variant": "#3d4947",
+        "on-tertiary": "#ffffff",
+        "error-container": "#ffdad6",
+        "tertiary-fixed": "#ffdbce",
+        "background": "#f9f9ff",
+        "on-tertiary-fixed-variant": "#773215",
+        "on-primary": "#ffffff",
+        "primary": "#00685f",
+        "primary-fixed": "#89f5e7",
+        "surface-bright": "#f9f9ff"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Geist"
+      ],
+      "layoutHints": {
+        "gridCols": 2,
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Records",
+          "icon": "history_edu",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Export Summary",
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Keep it up",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "mood",
+          "icon": "mood",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Mood Mark",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Productivity Utility",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "mood",
+          "icon": "mood",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Mood Mark",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Productivity Utility",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Records",
+          "icon": "history_edu",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Insights - Mood Mark"
+    },
+    "8431166a80a740e385ad289add76e732": {
+      "screenId": "8431166a80a740e385ad289add76e732",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "p-4",
+            "gap-2",
+            "h-screen",
+            "w-64",
+            "fixed",
+            "left-0",
+            "top-0"
+          ],
+          "childCount": 5
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "md:hidden",
+            "flex",
+            "justify-between",
+            "items-center",
+            "h-14",
+            "px-margin-mobile",
+            "w-full",
+            "top-0",
+            "sticky",
+            "border-b"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "md:ml-64",
+            "p-margin-mobile",
+            "md:p-margin-desktop",
+            "w-full",
+            "max-w-container-max-width",
+            "mx-auto",
+            "pb-24",
+            "md:pb-8"
+          ],
+          "childCount": 45
+        },
+        {
+          "tag": "nav",
+          "layout": "absolute",
+          "classes": [
+            "md:hidden",
+            "fixed",
+            "bottom-0",
+            "w-full",
+            "bg-surface",
+            "border-t",
+            "border-outline-variant",
+            "z-20",
+            "h-[64px]",
+            "px-2"
+          ],
+          "childCount": 2
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "settings",
+          "classes": [
+            "text-primary",
+            "hover:text-primary-fixed-dim",
+            "transition-colors",
+            "cursor-pointer",
+            "active:opacity-80"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#",
+          "expectedRoute": "#"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "classes": [
+            "text-primary",
+            "hover:text-primary-fixed-dim",
+            "transition-colors",
+            "cursor-pointer",
+            "active:opacity-80"
+          ],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "classes": [
+            "btn-primary",
+            "px-4",
+            "py-2",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "font-label-md",
+            "text-label-md",
+            "transition-shadow",
+            "hover:shadow-sm",
+            "h-[36px]",
+            "whitespace-nowrap"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "edit",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "opacity-0",
+            "group-hover:opacity-100"
+          ],
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Clear Search",
+          "classes": [
+            "btn-primary",
+            "px-4",
+            "py-2",
+            "font-label-md",
+            "text-label-md",
+            "flex",
+            "items-center",
+            "gap-2"
+          ],
+          "icon": "refresh",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "psychology",
+          "classes": [],
+          "icon": "psychology",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Mood Mark Productivity Utility",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search records...",
+          "placeholder": "Search records...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "pl-9",
+            "pr-3",
+            "py-2",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "outline-none",
+            "transition-colors",
+            "font-body-sm",
+            "text-body-sm",
+            "text-on-background",
+            "placeholder-on-surface-variant"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Records",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "fill"
+          ],
+          "icon": "history_edu",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "insights",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "history_edu",
+          "href": "#",
+          "classes": [],
+          "icon": "history_edu",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "psychology",
+        "history_edu",
+        "insights",
+        "settings",
+        "help",
+        "account_circle",
+        "search",
+        "add",
+        "local_fire_department",
+        "schedule",
+        "edit",
+        "search_off",
+        "refresh"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "outline-variant": "#bcc9c6",
+        "secondary-fixed": "#d9e3f7",
+        "error": "#ba1a1a",
+        "on-secondary-fixed": "#121c2a",
+        "on-error": "#ffffff",
+        "tertiary-fixed-dim": "#ffb59a",
+        "outline": "#6d7a77",
+        "on-background": "#141b2b",
+        "tertiary-container": "#b05e3d",
+        "surface-container-low": "#f1f3ff",
+        "surface-variant": "#dce2f7",
+        "surface-container-high": "#e1e8fd",
+        "surface-container-highest": "#dce2f7",
+        "primary-fixed-dim": "#6bd8cb",
+        "on-primary-fixed": "#00201d",
+        "on-secondary-container": "#596374",
+        "tertiary": "#924628",
+        "surface-container": "#e9edff",
+        "on-tertiary-container": "#fffbff",
+        "surface-tint": "#006a61",
+        "on-secondary-fixed-variant": "#3d4757",
+        "secondary-container": "#d6e0f4",
+        "on-surface": "#141b2b",
+        "surface-dim": "#d3daef",
+        "secondary": "#555f70",
+        "surface-container-lowest": "#ffffff",
+        "secondary-fixed-dim": "#bdc7db",
+        "on-error-container": "#93000a",
+        "surface": "#f9f9ff",
+        "on-tertiary-fixed": "#370e00",
+        "inverse-primary": "#6bd8cb",
+        "on-primary-fixed-variant": "#005049",
+        "primary-container": "#008378",
+        "on-secondary": "#ffffff",
+        "inverse-surface": "#293040",
+        "on-primary-container": "#f4fffc",
+        "inverse-on-surface": "#edf0ff",
+        "on-surface-variant": "#3d4947",
+        "on-tertiary": "#ffffff",
+        "error-container": "#ffdad6",
+        "tertiary-fixed": "#ffdbce",
+        "background": "#f9f9ff",
+        "on-tertiary-fixed-variant": "#773215",
+        "on-primary": "#ffffff",
+        "primary": "#00685f",
+        "primary-fixed": "#89f5e7",
+        "surface-bright": "#f9f9ff"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Geist"
+      ],
+      "layoutHints": {
+        "gridCols": 2,
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Records",
+          "icon": "history_edu",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "history_edu",
+          "icon": "history_edu",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "edit",
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Clear Search",
+          "icon": "refresh",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "psychology",
+          "icon": "psychology",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Mood Mark Productivity Utility",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search records...",
+          "type": "text",
+          "placeholder": "Search records...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "psychology",
+          "icon": "psychology",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Mood Mark Productivity Utility",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Records",
+          "icon": "history_edu",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "history_edu",
+          "icon": "history_edu",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Record Operations - Mood Mark"
+    },
+    "94c07817a5d641daa047e4d76ae5cba1": {
+      "screenId": "94c07817a5d641daa047e4d76ae5cba1",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "p-margin-mobile",
+            "md:p-margin-desktop"
+          ],
+          "childCount": 12
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Close Editor",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "justify-center",
+            "w-8",
+            "h-8",
+            "rounded-full",
+            "hover:bg-surface-container"
+          ],
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "classes": [
+            "h-9",
+            "px-4",
+            "rounded",
+            "border",
+            "border-outline-variant",
+            "bg-surface-container-lowest",
+            "text-on-surface",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-surface-container-low",
+            "transition-colors",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:outline-none"
+          ],
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Record",
+          "classes": [
+            "h-9",
+            "px-6",
+            "rounded",
+            "bg-[#0D9488]",
+            "text-[#ffffff]",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-[#0f766e]",
+            "transition-colors",
+            "focus:ring-2",
+            "focus:ring-offset-2",
+            "focus:ring-[#0D9488]",
+            "focus:outline-none",
+            "flex",
+            "items-center",
+            "gap-2",
+            "shadow-sm"
+          ],
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "date",
+          "label": "record-date",
+          "placeholder": "",
+          "name": "record-date",
+          "classes": [
+            "w-full",
+            "h-9",
+            "px-3",
+            "py-2",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "focus:outline-none",
+            "font-body-sm",
+            "text-body-sm",
+            "text-on-surface",
+            "transition-colors"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "record-mood",
+          "placeholder": "",
+          "name": "record-mood",
+          "classes": [
+            "w-full",
+            "h-9",
+            "px-3",
+            "py-2",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "focus:outline-none",
+            "font-body-sm",
+            "text-body-sm",
+            "text-on-surface",
+            "appearance-none",
+            "transition-colors"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "textarea",
+          "label": "Start typing your thoughts...",
+          "placeholder": "Start typing your thoughts...",
+          "name": "record-note",
+          "classes": [
+            "w-full",
+            "flex-1",
+            "p-4",
+            "bg-surface-bright",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "resize-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "focus:outline-none",
+            "font-body-md",
+            "text-body-md",
+            "text-on-surface",
+            "transition-colors",
+            "shadow-inner"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [],
+      "cards": [],
+      "icons": [
+        "close",
+        "expand_more",
+        "save"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "outline-variant": "#bcc9c6",
+        "secondary-fixed": "#d9e3f7",
+        "error": "#ba1a1a",
+        "on-secondary-fixed": "#121c2a",
+        "on-error": "#ffffff",
+        "tertiary-fixed-dim": "#ffb59a",
+        "outline": "#6d7a77",
+        "on-background": "#141b2b",
+        "tertiary-container": "#b05e3d",
+        "surface-container-low": "#f1f3ff",
+        "surface-variant": "#dce2f7",
+        "surface-container-high": "#e1e8fd",
+        "surface-container-highest": "#dce2f7",
+        "primary-fixed-dim": "#6bd8cb",
+        "on-primary-fixed": "#00201d",
+        "on-secondary-container": "#596374",
+        "tertiary": "#924628",
+        "surface-container": "#e9edff",
+        "on-tertiary-container": "#fffbff",
+        "surface-tint": "#006a61",
+        "on-secondary-fixed-variant": "#3d4757",
+        "secondary-container": "#d6e0f4",
+        "on-surface": "#141b2b",
+        "surface-dim": "#d3daef",
+        "secondary": "#555f70",
+        "surface-container-lowest": "#ffffff",
+        "secondary-fixed-dim": "#bdc7db",
+        "on-error-container": "#93000a",
+        "surface": "#f9f9ff",
+        "on-tertiary-fixed": "#370e00",
+        "inverse-primary": "#6bd8cb",
+        "on-primary-fixed-variant": "#005049",
+        "primary-container": "#008378",
+        "on-secondary": "#ffffff",
+        "inverse-surface": "#293040",
+        "on-primary-container": "#f4fffc",
+        "inverse-on-surface": "#edf0ff",
+        "on-surface-variant": "#3d4947",
+        "on-tertiary": "#ffffff",
+        "error-container": "#ffdad6",
+        "tertiary-fixed": "#ffdbce",
+        "background": "#f9f9ff",
+        "on-tertiary-fixed-variant": "#773215",
+        "on-primary": "#ffffff",
+        "primary": "#00685f",
+        "primary-fixed": "#89f5e7",
+        "surface-bright": "#f9f9ff"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Geist"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "6"
+      },
+      "behaviorContract": [
+        {
+          "kind": "button",
+          "label": "Close Editor",
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Record",
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "input",
+          "label": "record-date",
+          "type": "date",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "record-mood",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "Start typing your thoughts...",
+          "type": "textarea",
+          "placeholder": "Start typing your thoughts...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [],
+      "title": "Record Editor - Mood Mark"
+    }
+  }
+}

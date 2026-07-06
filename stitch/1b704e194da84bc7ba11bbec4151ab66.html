@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Insights - Mood Mark</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#bcc9c6",
+                      "secondary-fixed": "#d9e3f7",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed": "#121c2a",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed-dim": "#ffb59a",
+                      "outline": "#6d7a77",
+                      "on-background": "#141b2b",
+                      "tertiary-container": "#b05e3d",
+                      "surface-container-low": "#f1f3ff",
+                      "surface-variant": "#dce2f7",
+                      "surface-container-high": "#e1e8fd",
+                      "surface-container-highest": "#dce2f7",
+                      "primary-fixed-dim": "#6bd8cb",
+                      "on-primary-fixed": "#00201d",
+                      "on-secondary-container": "#596374",
+                      "tertiary": "#924628",
+                      "surface-container": "#e9edff",
+                      "on-tertiary-container": "#fffbff",
+                      "surface-tint": "#006a61",
+                      "on-secondary-fixed-variant": "#3d4757",
+                      "secondary-container": "#d6e0f4",
+                      "on-surface": "#141b2b",
+                      "surface-dim": "#d3daef",
+                      "secondary": "#555f70",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-fixed-dim": "#bdc7db",
+                      "on-error-container": "#93000a",
+                      "surface": "#f9f9ff",
+                      "on-tertiary-fixed": "#370e00",
+                      "inverse-primary": "#6bd8cb",
+                      "on-primary-fixed-variant": "#005049",
+                      "primary-container": "#008378",
+                      "on-secondary": "#ffffff",
+                      "inverse-surface": "#293040",
+                      "on-primary-container": "#f4fffc",
+                      "inverse-on-surface": "#edf0ff",
+                      "on-surface-variant": "#3d4947",
+                      "on-tertiary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed": "#ffdbce",
+                      "background": "#f9f9ff",
+                      "on-tertiary-fixed-variant": "#773215",
+                      "on-primary": "#ffffff",
+                      "primary": "#00685f",
+                      "primary-fixed": "#89f5e7",
+                      "surface-bright": "#f9f9ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max-width": "1200px",
+                      "margin-desktop": "32px",
+                      "margin-mobile": "16px",
+                      "gutter": "16px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "label-sm": [
+                              "Geist"
+                      ],
+                      "headline-lg": [
+                              "Geist"
+                      ],
+                      "body-sm": [
+                              "Geist"
+                      ],
+                      "body-md": [
+                              "Geist"
+                      ],
+                      "headline-sm": [
+                              "Geist"
+                      ],
+                      "label-md": [
+                              "Geist"
+                      ],
+                      "body-lg": [
+                              "Geist"
+                      ],
+                      "headline-md": [
+                              "Geist"
+                      ]
+              },
+              "fontSize": {
+                      "label-sm": [
+                              "11px",
+                              {
+                                      "lineHeight": "14px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "letterSpacing": "0em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "0em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "0em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body { background-color: #F9FAFB; }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex">
+<!-- SideNavBar -->
+<nav class="h-screen w-64 fixed left-0 top-0 bg-surface dark:bg-surface-dim text-primary dark:text-primary-fixed-dim font-label-md text-label-md border-r border-outline-variant dark:border-outline flat no shadows flex flex-col p-4 gap-2 hidden md:flex z-50">
+<div class="flex items-center gap-3 mb-8 mt-2 px-2">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-sm">mood</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim">Mood Mark</div>
+<div class="text-[10px] opacity-70">Productivity Utility</div>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-container-low dark:hover:bg-surface-container-highest hover:bg-surface-container dark:hover:bg-surface-container-highest transition-all active:scale-95 duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<span>Records</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 bg-secondary-container dark:bg-secondary-fixed text-on-secondary-container dark:text-on-secondary-fixed rounded-lg hover:bg-surface-container dark:hover:bg-surface-container-highest transition-all active:scale-95 duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="insights" data-weight="fill" style="font-variation-settings: 'FILL' 1;">insights</span>
+<span>Insights</span>
+</a>
+</div>
+<div class="mt-auto flex flex-col gap-1 border-t border-outline-variant/30 pt-4">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-container-low dark:hover:bg-surface-container-highest hover:bg-surface-container dark:hover:bg-surface-container-highest transition-all active:scale-95 duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span>Settings</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-container-low dark:hover:bg-surface-container-highest hover:bg-surface-container dark:hover:bg-surface-container-highest transition-all active:scale-95 duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span>Help</span>
+</a>
+</div>
+</nav>
+<!-- Mobile TopAppBar -->
+<header class="w-full top-0 sticky bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline flat no shadows flex justify-between items-center h-14 px-margin-mobile mx-auto md:hidden z-50">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tight">Mood Mark</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer active:opacity-80" data-icon="settings">settings</span>
+<span class="material-symbols-outlined text-primary cursor-pointer active:opacity-80" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<!-- Mobile BottomNavBar Placeholder (Logic requires hiding on specific flows, but this is a top-level destination) -->
+<div class="md:hidden fixed bottom-0 w-full bg-surface border-t border-outline-variant flex justify-around py-3 z-50">
+<div class="flex flex-col items-center text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">history_edu</span>
+<span class="text-[10px]">Records</span>
+</div>
+<div class="flex flex-col items-center text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">insights</span>
+<span class="text-[10px] font-medium">Insights</span>
+</div>
+</div>
+<!-- Main Canvas -->
+<main class="flex-1 md:ml-64 p-margin-mobile md:p-margin-desktop pb-24 md:pb-margin-desktop max-w-container-max-width mx-auto w-full flex flex-col gap-6">
+<!-- Header Actions -->
+<div class="flex justify-between items-end gap-4 flex-wrap">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-background">Weekly Insights</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Oct 24 - Oct 30</p>
+</div>
+<div class="flex gap-2">
+<button class="h-9 px-3 rounded bg-surface border border-outline-variant text-on-surface flex items-center gap-2 hover:bg-surface-variant transition-colors text-label-md font-label-md">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+                    Filter
+                </button>
+<button class="h-9 px-3 rounded bg-surface border border-outline-variant text-on-surface flex items-center gap-2 hover:bg-surface-variant transition-colors text-label-md font-label-md">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                    Export Summary
+                </button>
+</div>
+</div>
+<!-- Metrics Row -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Average Mood</span>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="font-headline-sm text-headline-sm">Productive</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Most Active Day</span>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm">Tuesday</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Entry Completion</span>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm">85%</span>
+<span class="text-xs text-primary bg-primary/10 px-1.5 py-0.5 rounded font-medium">+5%</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Total Notes</span>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm">12</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Left Column: Chart & Hint -->
+<div class="md:col-span-1 flex flex-col gap-6">
+<!-- Distribution Chart (Compact) -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4">
+<h2 class="font-headline-sm text-headline-sm border-b border-outline-variant/30 pb-2 mb-4">State Distribution</h2>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="w-16 font-label-md text-label-md text-on-surface-variant text-right">Focused</div>
+<div class="flex-1 h-2 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[45%]"></div>
+</div>
+<div class="w-6 font-label-md text-label-md text-right">45%</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-16 font-label-md text-label-md text-on-surface-variant text-right">Calm</div>
+<div class="flex-1 h-2 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary-fixed-dim w-[30%]"></div>
+</div>
+<div class="w-6 font-label-md text-label-md text-right">30%</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-16 font-label-md text-label-md text-on-surface-variant text-right">Tired</div>
+<div class="flex-1 h-2 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[15%]"></div>
+</div>
+<div class="w-6 font-label-md text-label-md text-right">15%</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-16 font-label-md text-label-md text-on-surface-variant text-right">Stressed</div>
+<div class="flex-1 h-2 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[10%]"></div>
+</div>
+<div class="w-6 font-label-md text-label-md text-right">10%</div>
+</div>
+</div>
+</div>
+<!-- Actionable Hint -->
+<div class="bg-surface-container border border-primary/20 rounded-lg p-4 relative overflow-hidden">
+<div class="absolute -right-4 -top-4 text-primary/10">
+<span class="material-symbols-outlined text-6xl" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md mb-2">
+<span class="material-symbols-outlined text-[16px]">insights</span>
+                            Observation
+                        </div>
+<p class="font-body-sm text-body-sm text-on-surface">You've been remarkably consistent this week. Your morning entries correlate strongly with "Focused" states.</p>
+<button class="mt-3 text-primary font-label-sm text-label-sm uppercase tracking-wider hover:underline">Keep it up</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Timeline -->
+<div class="md:col-span-2 bg-surface-container-lowest border border-outline-variant rounded-lg p-4 flex flex-col">
+<h2 class="font-headline-sm text-headline-sm border-b border-outline-variant/30 pb-2 mb-4">Recent Activity</h2>
+<div class="flex-1 relative pl-4 border-l border-outline-variant/30 ml-2 flex flex-col gap-6 pb-2">
+<!-- Timeline Item -->
+<div class="relative">
+<div class="absolute -left-[21px] w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-container-lowest mt-1.5"></div>
+<div class="flex items-baseline justify-between mb-1">
+<div class="font-label-md text-label-md font-semibold">Morning Sync</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Today, 9:00 AM</div>
+</div>
+<div class="bg-surface p-3 rounded border border-outline-variant/50 font-body-sm text-body-sm text-on-surface mt-2">
+                            "Felt prepared for the weekly review. Sleep was adequate."
+                        </div>
+<div class="flex gap-2 mt-2">
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded text-[10px] font-medium">Focused</span>
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded text-[10px] font-medium">Prepared</span>
+</div>
+</div>
+<!-- Timeline Item -->
+<div class="relative">
+<div class="absolute -left-[21px] w-2.5 h-2.5 rounded-full bg-primary-fixed-dim border-2 border-surface-container-lowest mt-1.5"></div>
+<div class="flex items-baseline justify-between mb-1">
+<div class="font-label-md text-label-md font-semibold">Post-Lunch Lull</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Yesterday, 2:30 PM</div>
+</div>
+<div class="bg-surface p-3 rounded border border-outline-variant/50 font-body-sm text-body-sm text-on-surface mt-2">
+                            "Energy dipped after eating. Struggled to focus on the documentation."
+                        </div>
+<div class="flex gap-2 mt-2">
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded text-[10px] font-medium">Tired</span>
+</div>
+</div>
+<!-- Timeline Item -->
+<div class="relative">
+<div class="absolute -left-[21px] w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-container-lowest mt-1.5"></div>
+<div class="flex items-baseline justify-between mb-1">
+<div class="font-label-md text-label-md font-semibold">Evening Wrap-up</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Tue, 6:15 PM</div>
+</div>
+<div class="bg-surface p-3 rounded border border-outline-variant/50 font-body-sm text-body-sm text-on-surface mt-2">
+                            "Cleared inbox. Feeling good about tomorrow's schedule."
+                        </div>
+<div class="flex gap-2 mt-2">
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded text-[10px] font-medium">Calm</span>
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded text-[10px] font-medium">Organized</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

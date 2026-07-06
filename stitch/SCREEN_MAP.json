@@ -1,0 +1,29 @@
+[
+  {
+    "screenId": "94c07817a5d641daa047e4d76ae5cba1",
+    "name": "Record Editor - Mood Mark",
+    "type": "form",
+    "description": "Record Editor - Mood Mark screen",
+    "surfaceIds": [
+      "SURF_RECORD_EDITOR"
+    ]
+  },
+  {
+    "screenId": "8431166a80a740e385ad289add76e732",
+    "name": "Record Operations - Mood Mark",
+    "type": "app-screen",
+    "description": "Record Operations - Mood Mark screen",
+    "surfaceIds": [
+      "SURF_RECORD_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "1b704e194da84bc7ba11bbec4151ab66",
+    "name": "Insights - Mood Mark",
+    "type": "app-screen",
+    "description": "Insights - Mood Mark screen",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  }
+]
