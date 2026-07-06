@@ -1,0 +1,183 @@
+[
+  {
+    "screenId": "94c07817a5d641daa047e4d76ae5cba1",
+    "title": "Record Editor - Mood Mark",
+    "componentName": "RecordEditorMoodMark",
+    "file": "src/screens/RecordEditorMoodMark.tsx",
+    "buttons": 3,
+    "inputs": 1,
+    "links": 0,
+    "actions": [
+      {
+        "id": "close-editor-1",
+        "kind": "button",
+        "label": "Close Editor",
+        "index": 0
+      },
+      {
+        "id": "cancel-2",
+        "kind": "button",
+        "label": "Cancel",
+        "index": 1
+      },
+      {
+        "id": "save-record-3",
+        "kind": "button",
+        "label": "Save Record",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "screenId": "8431166a80a740e385ad289add76e732",
+    "title": "Record Operations - Mood Mark",
+    "componentName": "RecordOperationsMoodMark",
+    "file": "src/screens/RecordOperationsMoodMark.tsx",
+    "buttons": 7,
+    "inputs": 1,
+    "links": 6,
+    "actions": [
+      {
+        "id": "settings-1",
+        "kind": "button",
+        "label": "Settings",
+        "index": 0
+      },
+      {
+        "id": "account-circle-2",
+        "kind": "button",
+        "label": "Account Circle",
+        "index": 1
+      },
+      {
+        "id": "create-record-3",
+        "kind": "button",
+        "label": "Create Record",
+        "index": 2
+      },
+      {
+        "id": "edit-4",
+        "kind": "button",
+        "label": "Edit",
+        "index": 3
+      },
+      {
+        "id": "edit-5",
+        "kind": "button",
+        "label": "Edit",
+        "index": 4
+      },
+      {
+        "id": "edit-6",
+        "kind": "button",
+        "label": "Edit",
+        "index": 5
+      },
+      {
+        "id": "clear-search-7",
+        "kind": "button",
+        "label": "Clear Search",
+        "index": 6
+      },
+      {
+        "id": "records-1",
+        "kind": "link",
+        "label": "Records",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "insights-2",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "settings-3",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "help-4",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "records-5",
+        "kind": "link",
+        "label": "Records",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "insights-6",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "screenId": "1b704e194da84bc7ba11bbec4151ab66",
+    "title": "Insights - Mood Mark",
+    "componentName": "InsightsMoodMark",
+    "file": "src/screens/InsightsMoodMark.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 4,
+    "actions": [
+      {
+        "id": "filter-1",
+        "kind": "button",
+        "label": "Filter",
+        "index": 0
+      },
+      {
+        "id": "export-summary-2",
+        "kind": "button",
+        "label": "Export Summary",
+        "index": 1
+      },
+      {
+        "id": "keep-it-up-3",
+        "kind": "button",
+        "label": "Keep it up",
+        "index": 2
+      },
+      {
+        "id": "records-1",
+        "kind": "link",
+        "label": "Records",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "insights-2",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "settings-3",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "help-4",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 3
+      }
+    ]
+  }
+]
