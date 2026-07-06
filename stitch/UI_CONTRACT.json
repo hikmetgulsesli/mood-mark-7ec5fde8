@@ -1,0 +1,358 @@
+[
+  {
+    "screenId": "94c07817a5d641daa047e4d76ae5cba1",
+    "screenTitle": "Record Editor - Mood Mark",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Close Editor",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "Record",
+        "line": 197
+      },
+      {
+        "type": "input",
+        "label": "date",
+        "inputType": "date",
+        "line": 158
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 167
+      },
+      {
+        "type": "input",
+        "label": "Start typing your thoughts...",
+        "inputType": "textarea",
+        "placeholder": "Start typing your thoughts...",
+        "line": 189
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 149
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Close Editor",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "Record",
+        "line": 197
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "date",
+        "inputType": "date",
+        "line": 158
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 167
+      },
+      {
+        "type": "input",
+        "label": "Start typing your thoughts...",
+        "inputType": "textarea",
+        "placeholder": "Start typing your thoughts...",
+        "line": 189
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 7,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "8431166a80a740e385ad289add76e732",
+    "screenTitle": "Record Operations - Mood Mark",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Records",
+        "href": "#",
+        "line": 130
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "Records",
+        "href": "#",
+        "line": 293
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 299
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 155
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 158
+      },
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 175
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 238
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 256
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 273
+      },
+      {
+        "type": "button",
+        "label": "Clear Search",
+        "line": 285
+      },
+      {
+        "type": "input",
+        "label": "Search records...",
+        "inputType": "text",
+        "placeholder": "Search records...",
+        "line": 172
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Records",
+        "href": "#",
+        "line": 130
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "Records",
+        "href": "#",
+        "line": 293
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 299
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 155
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 158
+      },
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 175
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 238
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 256
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 273
+      },
+      {
+        "type": "button",
+        "label": "Clear Search",
+        "line": 285
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search records...",
+        "inputType": "text",
+        "placeholder": "Search records...",
+        "line": 172
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 14,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "1b704e194da84bc7ba11bbec4151ab66",
+    "screenTitle": "Insights - Mood Mark",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Records",
+        "href": "#",
+        "line": 191
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 195
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 201
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 239
+      },
+      {
+        "type": "button",
+        "label": "Export Summary",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "Keep it up",
+        "line": 326
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Records",
+        "href": "#",
+        "line": 191
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 195
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 201
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 205
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 239
+      },
+      {
+        "type": "button",
+        "label": "Export Summary",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "Keep it up",
+        "line": 326
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 7,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
